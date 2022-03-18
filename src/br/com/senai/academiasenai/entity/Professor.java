@@ -7,10 +7,12 @@ public class Professor {
 	private Integer id;
 	private String nome;
 	private int ano;
+	private LocalDate dataDeAdmissao;
 	
 	public Professor(Integer id, String nome, LocalDate dataDeNascmineto) {
 		super();
 		this.id = id;
+		this.dataDeAdmissao=dataDeAdmissao;
 		this.nome = nome;
 	}
 	public Integer getId() {
@@ -25,6 +27,19 @@ public class Professor {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	public int getAno() {
+		return ano;
+	}
+	public void setAno(int ano) {
+		this.ano = ano;
+	}
+	public LocalDate getDataDeAdmissao() {
+		return dataDeAdmissao;
+	}
+	public void setDataDeAdmissao(LocalDate dataDeAdmissao) {
+		this.dataDeAdmissao = dataDeAdmissao;
+	}
+	
 	
 	
 	
